@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_HION</title>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <!-- link's inner CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- script's inner JS -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#">CONTENT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="imgs/mainbanner.svg" alt="error">
+            </div>
+        </section>
+        <section class="section-group section-group--1 section-group--horizontal-left">
+            <section class="section section--1">섹션1</section>
+            <section class="section section--2">섹션2</section>
+            <section class="section section--3">섹션3</section>
+            <section class="section section--4">섹션4</section>
+        </section>
+    </main>
+
+    <style>
+        body{
+            overflow-x:hidden;
+        }
+        header{
+            position: fixed;
+            top:40px;
+            left:1388px;
+        }
+        header ul{
+            display:flex;
+            gap:60px;
+            font-size:18px;
+            font-weight: 600;
+            color:#fff;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            font-weight: bold;
+            letter-spacing: -0.5rem;
+            box-sizing: border-box;
+            background-color:#262626;
+        }
+
+        .section-group--horizontal-left {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .section-group--horizontal-left>.section {
+            width: 100%;
+            flex-shrink: 0;
+        }
+    </style>
+
+    <script>
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        function SectionGroup__init() {
+            $('.section-group--horizontal-left').each(function (index, node) {
+                var $group = $(node);
+                var $section = $group.find(' > .section');
+
+                gsap.to($section, {
+                    xPercent: -100 * ($section.length - 1),
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: $group,
+                        start: "top top",
+                        end: "+=" + ($section.length - 1) + "00%",
+                        pin: true,
+                        scrub: true,
+                    }
+                });
+            });
+        }
+
+        SectionGroup__init();
+    </script>
+</body>
+
+</html>
