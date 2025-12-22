@@ -8,11 +8,8 @@
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
 
     <!-- link's inner CSS -->
     <link rel="stylesheet" href="style.css">
@@ -26,13 +23,21 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PROJECT</a></li>
-                    <li><a href="#">CONTENT</a></li>
+                    <li><a href="#checkPoint-1">ABOUT</a></li>
+                    <li><a href="#checkPoint-2">PROJECT</a></li>
+                    <li><a href="#checkPoint-3">CONTENT</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+
+            <div class="cursor">
+                <div class="clicktext">
+                    Go Site
+                </div>
+            </div>
+
+            <div class="cursor-point"></div>
             <section class="banner">
                 <video class="banner_video" autoplay muted playsinline>
                     <source src="imgs/opening.mp4" type="video/mp4">
@@ -45,41 +50,46 @@
                 </div>
 
             </section>
+
             <section class="section-group section-group--1 section-group--horizontal-left">
-                <section class="section section--1 Category_Name">
+                <section id="checkPoint-1" class="section section--1 Category_Name">
                     <div>
                         About Me
                     </div>
                 </section>
                 <section class="section section--2 section-about section-about-1">
-                    <div class="introduction">
+                    <div class="introduction fadeInLeft">
                         <div class="h1">Introduction</div>
                         <div class="text-box">
-                            <p>‘꾸준함으로 페이스를 지키고, 끝까지 완주하는 웹퍼블리셔(디자이너)입니다.’</p>
-                            <p>마라톤처럼 꾸준히 성장하는 웹퍼블리셔입니다. 빠른 성과보다 안정적인 페이스 유지가 더 큰 힘을 만든다고 믿습니다. 매일 한 걸음씩 쌓아가는 학습과 경험이 저의
+                            <p>‘꾸준함으로 페이스를 지키고, 끝까지 완주하는 웹퍼블리셔입니다.’</p>
+                            <p>마라톤처럼 꾸준히 성장하는 웹퍼블리셔입니다. 빠른 성과보다 안정적인 페이스 유지가 더 큰 힘을 만든다고 믿습니다. 매일 한 걸음씩 쌓아가는 학습과 경험이
+                                저의
                                 실력을
                                 완성시키며, 문제 앞에서 멈추지 않고, 천천히 끝까지 해결해내는 것을 중요하게 생각합니다. </p>
-                            <p>코드 한 줄, 커밋 하나가 저의 기록이자 성장의 지표라고 생각합니다. 지속적인 개선과 꾸준한 실행으로 더 나은 개발자가 되고자 오늘도 한 단계 더 나아가기
+                            <p>코드 한 줄, 커밋 하나가 저의 기록이자 성장의 지표라고 생각합니다. 지속적인 개선과 꾸준한 실행으로 더 나은 개발자가 되고자 오늘도 한 단계 더
+                                나아가기
                                 위해, 제
                                 페이스로 묵묵히 달려가고 있습니다.</p>
                         </div>
                     </div>
-                    <div class="history">
+                    <div class="history fadeInLeft">
                         <div class="h1">History</div>
                         <div class="text-box">
                             <div class="item"><span>한밭대학교</span><span class="Addendum">Mechanical Engineering</span>
                             </div>
                             <div class="period"><span>2013.02.~2020.07</span></div>
-                            <div class="item"><span>(주)워터제네시스</span><span class="Addendum">General Affairs</span></div>
+                            <div class="item"><span>(주)워터제네시스</span><span class="Addendum">General Affairs</span>
+                            </div>
                             <div class="period"><span>2020.07.~2024.07</span></div>
-                            <div class="item"><span>SBS 컴퓨터 아카데미</span><span class="Addendum">UI/UX web publiser</span>
+                            <div class="item"><span>SBS 컴퓨터 아카데미</span><span class="Addendum">UI/UX web
+                                    publiser</span>
                             </div>
                             <div class="period"><span>2025.03.~2025.09.</span></div>
                         </div>
                     </div>
                 </section>
                 <section class="section section--3 section-about section-about-2">
-                    <div class="certificate">
+                    <div class="certificate fadeInLeft">
                         <div class="h1">Certificate</div>
                         <div class="text-box">
                             <div class="item"><span>웹디자인개발기능사</span></div>
@@ -88,7 +98,7 @@
                                     class="Addendum">Illustrator</span></div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div class="skill fadeInLeft">
                         <div class="h1">Skills</div>
                         <div class="text-box">
                             <div>
@@ -107,142 +117,243 @@
                         </div>
                     </div>
                 </section>
-                <section class="section section--4 Category_Name">
+                <section id="checkPoint-2" class="section section--4 Category_Name">
                     <div>
                         Project
                     </div>
                 </section>
-                <section class="section section--5 section-Project">
-                    <div class="text-box">
+                <section class="section section--5 section-project">
+                    <div class="text-box fadeInLeft">
                         <div class="h1"><span>01</span></div>
                         <div class="h2"><span>Mercedes-Benz | Korea</span></div>
-                        <div>
-                            <p>메르세데스-벤츠 코리아 공식 웹사이트를 리디자인하여 사용자 중심의 UI/UX로 정보 접근성을 개선하고,
-                                브랜드 아이덴티티와 고급스러운 이미지를 웹 전반에
-                                자연스럽게 반영했습니다.</p>
-                        </div>
-                        <div>
-                            <span># 리디자인</span>
-                            <span># 반응형</span>
-                            <span># PC</span>
-                            <span># 기여도 100%</span>
+                        <div class="contents">
+                            <div>
+                                <p>메르세데스-벤츠 코리아 공식 웹사이트를 리디자인하여 사용자 중심의 UI/UX로 정보 접근성을 개선하고,
+                                    브랜드 아이덴티티와 고급스러운 이미지를 웹 전반에
+                                    자연스럽게 반영했습니다.</p>
+                            </div>
+                            <div>
+                                <span># 리디자인</span>
+                                <span># 반응형</span>
+                                <span># PC</span>
+                                <span># 기여도 100%</span>
+                            </div>
                         </div>
                         <div class="button">
-                            <div>Go Site</div>
-                            <div>Git hub</div>
+                            <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
+                            <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
                         </div>
                     </div>
-                    <div class="content">
-                        <img src="" alt="">
+                    <div class="mockup Leftmotion">
+                        <img src="imgs/benz_mockup_2.png" alt="benz_mockup">
                     </div>
                 </section>
-                <section class="section section--6 section-Project">
-                    <div class="text-box">
+                <section class="section section--6 section-project">
+                    <div class="text-box fadeInLeft">
                         <div class="h1"><span>02</span></div>
                         <div class="h2"><span>재능스스로북</span></div>
-                        <div>
-                            <p>재능교육 주식회사 재능스스로북 공식 웹사이트를 리디자인하여 기업의 교육 철학을 명확히 반영하고,
-                                아이들에게 친숙한 디자인과 사용성을 강화했습니다.</p>
-                        </div>
-                        <div>
-                            <span># 리디자인</span>
-                            <span># 반응형</span>
-                            <span># PC</span>
-                            <span># 기여도 100%</span>
+                        <div class="contents">
+                            <div>
+                                <p>재능교육 주식회사 재능스스로북 공식 웹사이트를 리디자인하여 기업의 교육 철학을 명확히 반영하고,
+                                    아이들에게 친숙한 디자인과 사용성을 강화했습니다.</p>
+                            </div>
+                            <div>
+                                <span># 리디자인</span>
+                                <span># 반응형</span>
+                                <span># PC</span>
+                                <span># 기여도 100%</span>
+                            </div>
                         </div>
                         <div class="button">
-                            <div>Go Site</div>
-                            <div>Git hub</div>
+                            <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
+                            <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
                         </div>
                     </div>
-                    <div class="content">
-                        <img src="" alt="">
+                    <div class="mockup Leftmotion">
+                        <img src="imgs/재능_mockup.png" alt="재능_mockup">
                     </div>
                 </section>
-                <section class="section section--7 section-Project">
-                    <div class="text-box">
+                <section class="section section--7 section-project">
+                    <div class="text-box fadeInLeft">
                         <div class="h1"><span>03</span></div>
                         <div class="h2"><span>Leeum Art Museum</span></div>
-                        <div>
-                            <p>리움미술관 공식 웹사이트를 리디자인하여 기존 정체성은 유지하면서 예술적 분위기를 강화하고,
-                                정보 구조와 메뉴 사용성을 개선해 사용자 경험을 향상시켰습니다.</p>
-                        </div>
-                        <div>
-                            <span># 리디자인</span>
-                            <span># 반응형</span>
-                            <span># PC</span>
-                            <span># 기여도 100%</span>
+                        <div class="contents">
+                            <div>
+                                <p>리움미술관 공식 웹사이트를 리디자인하여 기존 정체성은 유지하면서 예술적 분위기를 강화하고,
+                                    정보 구조와 메뉴 사용성을 개선해 사용자 경험을 향상시켰습니다.</p>
+                            </div>
+                            <div>
+                                <span># 리디자인</span>
+                                <span># 반응형</span>
+                                <span># PC</span>
+                                <span># 기여도 100%</span>
+                            </div>
                         </div>
                         <div class="button">
-                            <div>Go Site</div>
-                            <div>Git hub</div>
+                            <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
+                            <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
                         </div>
                     </div>
-                    <div class="content">
-                        <img src="" alt="">
+                    <div class="mockup Leftmotion">
+                        <img src="imgs/leeum_mockup.png" alt="leeum_mockup">
                     </div>
                 </section>
-                <section class="section section--8 section-Project">
-                    <div class="text-box">
+                <section class="section section--8 section-project">
+                    <div class="text-box fadeInLeft">
                         <div class="h1"><span>04</span></div>
                         <div class="h2"><span>HPIX</span></div>
-                        <div>
-                            <p>에이치픽스(HPIX) 공식 웹사이트를 리디자인하여 섹션 구조를 정리하고 인테리어 용역 서비스를
-                                명확히 드러내는 사용자 중심 UI/UX로 정보 구조와 브랜드 경험을 개선했습니다.</p>
-                        </div>
-                        <div>
-                            <span># 리디자인</span>
-                            <span># 반응형</span>
-                            <span># PC</span>
-                            <span># 기여도 100%</span>
+                        <div class="contents">
+                            <div>
+                                <p>에이치픽스(HPIX) 공식 웹사이트를 리디자인하여 섹션 구조를 정리하고 인테리어 용역 서비스를
+                                    명확히 드러내는 사용자 중심 UI/UX로 정보 구조와 브랜드 경험을 개선했습니다.</p>
+                            </div>
+                            <div>
+                                <span># 리디자인</span>
+                                <span># 반응형</span>
+                                <span># PC</span>
+                                <span># 기여도 100%</span>
+                            </div>
                         </div>
                         <div class="button">
-                            <div>Go Site</div>
-                            <div>Git hub</div>
+                            <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
+                            <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
                         </div>
                     </div>
-                    <div class="content">
-                        <img src="" alt="">
+                    <div class="mockup Leftmotion">
+                        <img src="imgs/HPIX_mockup.png" alt="HPIX_mockup">
                     </div>
                 </section>
-                <section class="section section--9 section-Project">
-                    <div class="text-box">
+                <section class="section section--9 section-project">
+                    <div class="text-box fadeInLeft">
                         <div class="h1"><span>05</span></div>
-                        <di class="h2"><span>TeamProject<br>APP UX/UI Design</span></di v>
-                        <div>
-                            <p>1인 가구의 음식물 쓰레기 문제 해결을 목표로, 레시피 기반 1인분 식재료 판매 앱 서비스를 기획·개발하며 사용자 중심 UX/UI에 집중했습니다.</p>
-                        </div>
-                        <div>
-                            <span># 앱서비스기획</span>
-                            <span># 프로세스</span>
-                            <span># 앱</span>
-                            <span># 기여도 50%</span>
+                        <div class="h2"><span>TeamProject<br>APP UX/UI Design</span></div>
+                        <div class="contents">
+                            <div>
+                                <p>1인 가구의 음식물 쓰레기 문제 해결을 목표로, 레시피 기반 1인분 식재료 판매 앱 서비스를 기획·개발하며 사용자 중심 UX/UI에 집중했습니다.
+                                </p>
+                            </div>
+                            <div>
+                                <span># 리디자인</span>
+                                <span># 반응형</span>
+                                <span># PC</span>
+                                <span># 기여도 100%</span>
+                            </div>
                         </div>
                         <div class="button">
-                            <div>Process</div>
-                            <div>Prototype</div>
+                            <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
+                            <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
                         </div>
                     </div>
-                    <div class="content">
-                        <img src="" alt="">
+                    <div class="mockup Leftmotion">
+                        <img src="imgs/mockup_teamproject.jpg" alt="mockup_teamproject">
                     </div>
                 </section>
-                <section class="section section--10 Category_Name">
+                <section id="checkPoint-3" class="section section--10 Category_Name">
                     <div>
                         CONTECT
                     </div>
+                    <div class="contect_card moveup">
+                        <div class="h1">Runner's Log</div>
+                        <div class="experience">
+                            <div>EXPERIENCE TIME</div>
+                            <div>03:09:12+</div>
+                        </div>
+                        <div class="contect">
+                            <div>CONTECT</div>
+                            <div>
+                                <span>ehdgus7061@gmail.com</span><a href="#"><img src="imgs/icon_gitbub_W.png"
+                                        alt="icon_git"></a>
+                            </div>
+                        </div>
+                        <div class="contour"></div>
+                        <div class="copylight">© copyright DongHyeon,Kim. All Right Reserved.</div>
+                    </div>
                 </section>
-            </section>
 
-            <div class="prograsbar">
-                <div class="progras">
+                <div class="prograsbar">
+                    <div class="progras">
+                    </div>
                 </div>
-            </div>
         </main>
 
     </div>
 
     <style>
+        * {
+            cursor: none;
+        }
+
+        /* cursor custom start*/
+        .cursor {
+            position: fixed;
+            width: 24px;
+            height: 24px;
+            top: -300px;
+            left: -300px;
+            border-radius: 50%;
+            background-color: white;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            transition: width .3s, height .3s;
+            mix-blend-mode: difference;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cursor-point {
+            position: fixed;
+            width: 0;
+            height: 0;
+            top: -300px;
+            left: -300px;
+            border-radius: 50%;
+            background-color: #BA2D34;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            /* transition: top .3s .1s, left .3s .1s; */
+            transition: width .3s, height .3s;
+            z-index: 100;
+            /* mix-blend-mode: difference; */
+        }
+
+        .cursor>.clicktext {
+            opacity: 0;
+            
+
+        }
+
+        .cursor-big {
+            width: 60px;
+            height: 60px;
+        }
+
+        .cursor-point.active {
+            width: 20px;
+            height: 20px;
+        }
+
+        .cursor-mockup {
+            width: 125px;
+            height: 125px;
+            background-color : rgba(0,0,0,.7);
+            mix-blend-mode: normal;
+            color:#fff;
+        }
+
+        .cursor-mockup>.clicktext{
+            display:block;
+            font-size:24px;
+            transform:rotate(30deg);
+            opacity: 1;
+            transition:.4s ease;
+            
+            
+        }
+
+        /* cursor custom end*/
+
         .container {
             overflow-x: hidden;
             background-color: #262626;
@@ -255,7 +366,7 @@
             right: 5%;
             visibility: hidden;
             opacity: 0;
-            transition: all 0.7s 2.5s ease;
+
             z-index: 111;
         }
 
@@ -263,6 +374,14 @@
             visibility: visible;
             opacity: 1;
             top: 40px;
+            transition: all 0.7s 2.5s ease;
+        }
+
+        header.active_ef {
+            visibility: visible;
+            opacity: 1;
+            top: 40px;
+            transition: all 0.7s ease;
         }
 
         header ul {
@@ -346,7 +465,6 @@
             min-height: 100vh;
             display: flex;
             box-sizing: border-box;
-            border: 10px solid green;
             justify-content: center;
             align-items: center;
             color: #fff;
@@ -356,9 +474,9 @@
             justify-content: flex-start;
         }
 
-        .section-group--horizontal-left>.Category_Name>div {
+        .section-group--horizontal-left>.Category_Name>div:first-child {
             padding-left: 20px;
-            font-size:46.9239vh;
+            font-size: 46.9239vh;
             box-sizing: border-box;
             color: transparent;
             -webkit-text-stroke: 1px #fff;
@@ -382,11 +500,11 @@
             flex-direction: column;
             gap: 60px;
             height: 594px;
-            border: 10px solid green;
             box-sizing: border-box;
 
         }
 
+        /* <======= section-about start =======> */
         .section-group--horizontal-left>.section-about>.introduction {
             width: 640px;
         }
@@ -406,20 +524,28 @@
 
         .section-group--horizontal-left>.section-about>div>.text-box {
             font-family: 'pretendart';
+            padding-left: 40px;
+            box-sizing: border-box;
         }
 
         .section-group--horizontal-left>.section-about>div>.text-box>p {
             font-size: 18px;
             /* font-size:1.877vh; */
             font-weight: 400;
-            line-height:1.7;
+            line-height: 1.7;
             text-align: justify;
+            display: block;
         }
 
         .section-group--horizontal-left>.section-about>div>.text-box>p:first-child {
             font-size: 20px;
             /* font-size:2.07vh; */
             font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .section-group--horizontal-left>.section-about>div>.text-box>p:nth-child(2) {
+            margin-bottom: 16px;
         }
 
         .section-group--horizontal-left>.section-about>div>.text-box .item {
@@ -430,10 +556,198 @@
         .section-group--horizontal-left>.section-about>div>.text-box .Addendum {
             font-size: 18px;
             font-weight: 500;
+        }
+
+        .section-group--horizontal-left>.section-about>div>.text-box .period {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .section-group--horizontal-left>.section-about>div .item {
+            margin-bottom: 40px;
+        }
+
+        .section-group--horizontal-left>.section-about>.history .period {
+            margin-bottom: 40px;
+        }
+
+        .section-group--horizontal-left>.section-about>.history .item {
+            margin-bottom: 8px;
+        }
+
+        .section-group--horizontal-left>.section-about>.skill>.text-box {
+            display: flex;
+            gap: 160px;
+        }
+
+        /* <======= section-about end =======> */
+
+
+        /* <======= section-projectt start =======> */
+        .section-project {
+            gap: 80px;
+            align-items: flex-start;
+            justify-content: flex-start !important;
+            padding: 180px;
+        }
+
+        .section-project .text-box {
+            width: 563px;
+        }
+
+        .section-project .text-box .h1 {
+            font-size: 100px;
+            margin-bottom: 35px;
+        }
+
+        .section-project .text-box .h2 {
+            font-size: 60px;
+        }
+
+        .section-project .text-box .contents {
+            font-family: pretendard;
+            height: 204px;
+            margin-bottom: 20px;
+        }
+
+        .section--9 .text-box .contents {
+            height: 123px;
+        }
+
+        .section-project .text-box .contents>div:nth-child(1) {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.7;
+            margin: 16px 0 20px;
+        }
+
+        .section-project .text-box .contents>div:nth-child(2)>span {
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .section-project .text-box .button>div {
+            font-family: pretendard;
+            padding: 10px 16px;
+            display: inline-block;
+            border: 1px solid #fff;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-right: 18px;
+        }
+
+        .section-project .mockup {
+            width: 0;
+            height: 593px;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            transition: width 1s ease;
 
         }
 
+        .section-project .mockup.active {
+            width: 910px;
+        }
 
+        .section-project .mockup>img {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 455px;
+            transform: translate(-50%, -50%);
+            width: 1000px;
+            pointer-events: none;
+        }
+
+        /* <======= section-project end =======> */
+        /* <======= contect_card start =======> */
+        .contect_card {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 858px;
+            padding: 52px;
+            box-sizing: border-box;
+            background-color: #333;
+            /* display:none;  */
+        }
+
+        .contect_card .h1 {
+            color: #BA0009;
+            background-color: #fff;
+            font-size: 30px;
+            padding: 10px 0;
+            text-align: center;
+
+        }
+
+        .contect_card .experience {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 68px 0;
+            flex-direction: column;
+            letter-spacing: 4.64px;
+        }
+
+        .contect_card .experience>div:first-child {
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+
+        .contect_card .experience>div:last-child {
+            font-size: 133px;
+        }
+
+        .contect_card .contect {
+            padding-bottom: 12px;
+            letter-spacing: 4.64px;
+
+        }
+
+        .contect_card .contect>div:first-child {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+
+        .contect_card .contect>div:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contect_card .contect span {
+            display: inline-block;
+            font-size: 58px;
+        }
+
+        .contect_card .contect img,
+        .contect_card .contect a {
+            display: block;
+        }
+
+        .contect_card .contect img {
+            width: 48px;
+        }
+
+        .contect_card .contour {
+            height: 4px;
+            background-color: #fff;
+        }
+
+        .contect_card .copylight {
+            font-size: 16px;
+            font-family: pretendard;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        /* <======= contect_card end =======> */
 
         /* prograsbar start */
         .prograsbar {
@@ -479,24 +793,152 @@
 
         gsap.registerPlugin(ScrollTrigger);
 
-        function SectionGroup__init() {
-            $('.section-group--horizontal-left').each(function (index, node) {
-                var $group = $(node);
-                var $section = $group.find(' > .section');
+        // function SectionGroup__init() {
+        //     $('.section-group--horizontal-left').each(function (index, node) {
+        //         var $group = $(node);
+        //         var $section = $group.find(' > .section');
 
-                gsap.to($section, {
-                    xPercent: -100 * ($section.length - 1),
+        //         let $horizontalTween = gsap.to($section, {
+        //             xPercent: -100 * ($section.length - 1),
+        //             ease: "none",
+        //             scrollTrigger: {
+        //                 trigger: $group,
+        //                 start: "top top",
+        //                 end: "+=" + ($section.length - 1) + "00%",
+        //                 pin: true,
+        //                 scrub: true,
+        //                 // markers: true,
+        //             }
+        //         });
+
+
+
+        //         gsap.from('.box-1', {
+        //             x: 400,
+        //             opacity: 0,
+        //             duration: 1.2,
+        //             scrollTrigger: {
+        //                 trigger: ".box-1",
+        //                 containerAnimation: $horizontalTween,
+        //                 start: "right 40%",
+        //                 toggleActions: "play none none reset",
+
+        //             }
+        //         });
+        //         gsap.from('.box-2', {
+        //             x: 400,
+        //             opacity: 0,
+        //             duration: 1.2,
+        //             scrollTrigger: {
+        //                 trigger: ".box-2",
+        //                 containerAnimation: $horizontalTween,
+        //                 start: "right 2%",
+        //                 toggleActions: "play none none reset",
+
+        //             }
+        //         });
+        //     });
+
+
+        // }
+
+        function HorizontalTween() {
+
+            let $sections = $('.section-group').find(' > .section');
+
+            let $ScrollTween = gsap.to($sections, {
+                xPercent: -100 * ($sections.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".section-group",
+                    pin: true,
+                    scrub: .5,
+                    start: "top top",
+                    end: "+=9000",
+                    // markers: true,
+                }
+            });
+
+
+            $('.fadeInLeft').each(function () {
+                gsap.from(this, {
+                    x: 100,
+                    opacity: 0,
+                    duration: 0.7,
                     ease: "none",
                     scrollTrigger: {
-                        trigger: $group,
-                        start: "top top",
-                        end: "+=" + ($section.length - 1) + "00%",
-                        pin: true,
-                        scrub: true,
+                        trigger: this,
+                        containerAnimation: $ScrollTween,
+                        start: "left 80%",
+                        toggleActions: "play none none none",
+                        // markers: true,
                     }
                 });
             });
+
+            $('.Leftmotion').each(function () {
+                ScrollTrigger.create({
+                    trigger: this,
+                    containerAnimation: $ScrollTween,
+                    toggleClass: "active",
+                    start: "center 60%",
+                    markers: true,
+                    once: true,
+                })
+            })
+
+
+
+            $('.section').each(function () {
+
+
+                // gsap.to(this, {
+                //     width: 920,
+                //     duration: 0.7,
+                //     ease: "none",
+                //     scrollTrigger: {
+                //         trigger: this,
+                //         containerAnimation: $ScrollTween,
+                //         start: "left 80%",
+                //         toggleActions: "play none none reverse",
+                //         markers: true,
+                //     }
+                // });
+            });
+
+            // gsap.set(".contect_card", { y: 700 });
+
+            const $tl = gsap.timeline();
+            $tl.from(".moveup", { y: 1000 });
+
+            ScrollTrigger.create({
+                animation: $tl,
+                trigger: ".section--10",
+                containerAnimation: $ScrollTween,
+                start: "left 40%",
+                end: "+=700",
+                scrub: true,
+                anticipatePin: 1,
+                // markers: true,
+            });
+
+            // gsap.to('.moveup', {
+            //     y: 0,
+            //     ease: "none",
+            //     scrollTrigger: {
+            //         trigger: ".section--10",
+            //         containerAnimation: $ScrollTween,
+            //         scrub: true,
+            //         start: "left 0%",
+            //         end: "=300",
+            //         markers: true,
+            //     },
+            // });
+
         }
+
+
+
 
         function ScrollBar__init() {
             $(window).on('scroll', function () {
@@ -529,14 +971,54 @@
                 $('header').addClass('active')
                 $('.banner > div').addClass('active')
             });
+
+            $(window).on('scroll', function () {
+                $('header').addClass('active_ef');
+            });
+        }
+
+        function Cursor() {
+            const $cursor = $('.cursor');
+            const $cursorPoint = $('.cursor-point');
+
+            $(window).mousemove(function (e) {
+                $cursor.css({
+                    top: e.clientY,
+                    left: e.clientX,
+                });
+
+                $cursorPoint.css({
+                    top: e.clientY,
+                    left: e.clientX,
+                });
+            });
+
+            $('.need-to-cursor-big').mouseenter(function () {
+                $('.cursor').addClass('cursor-big');
+                $('.cursor-point').addClass('active');
+            });
+
+            $('.need-to-cursor-big').mouseleave(function () {
+                $('.cursor').removeClass('cursor-big');
+                $('.cursor-point').removeClass('active');
+            });
+
+            $('.mockup').mouseenter(function () {
+                $('.cursor').addClass('cursor-mockup');
+            });
+
+            $('.mockup').mouseleave(function () {
+                $('.cursor').removeClass('cursor-mockup');
+            });
         }
 
 
-
+        HorizontalTween()
         bannerVideo_init()
         ScrollBar__init()
-        SectionGroup__init();
-        AOS.init();
+        Cursor()
+        // SectionGroup__init();
+
     </script>
 </body>
 
