@@ -131,9 +131,9 @@ header.active_ef {
 header ul {
     display: flex;
     /* gap: 60px; */
-    gap : 6.32vh;
+    gap: 6.32vh;
     /* font-size: 18px; */
-    font-size:1.89vh;
+    font-size: 1.89vh;
     color: #fff;
     font-family: 'Pretendard';
     font-weight: 600;
@@ -355,6 +355,7 @@ header ul li:hover::after {
 .section-project .text-box {
     /* width: 563px; */
     width: 59.26vh;
+    height: 54.11vh;
     display: flex;
     flex-direction: column;
 
@@ -375,8 +376,9 @@ header ul li:hover::after {
 .section-project .text-box .contents {
     font-family: 'pretendard';
     /* height: 204px; */
-    height: 21.47vh;
+    /* height: 21.47vh; */
     /* margin-bottom: 20px; */
+    flex-grow: 1;
     margin-bottom: 2.11vh;
 }
 
@@ -417,7 +419,14 @@ header ul li:hover::after {
     width: 95.79vh;
 }
 
-.section-project .mockup>img {
+.section-project .mockup>a {
+    display: block;
+    width:100%;
+    height:100%;
+
+}
+
+.section-project .mockup>a>img {
     display: block;
     position: absolute;
     top: 50%;
@@ -429,11 +438,11 @@ header ul li:hover::after {
     transition: all .4s ease;
 }
 
-.section-project .mockup:hover>img {
+.section-project .mockup:hover>a>img {
     height: 110%;
 }
 
-.section-project .mockup>.Leftmotion-b {
+.section-project .mockup>a>.Leftmotion-b {
     background-color: #262626;
     position: absolute;
     left: 0;
@@ -443,7 +452,7 @@ header ul li:hover::after {
     z-index: 11;
 }
 
-.section-project .mockup>.Leftmotion-w {
+.section-project .mockup>a>.Leftmotion-w {
     background-color: #fff;
     position: absolute;
     left: 0;

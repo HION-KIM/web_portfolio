@@ -10,6 +10,7 @@
     <!-- Gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
 
     <!-- link's inner CSS -->
     <link rel="stylesheet" href="style.css">
@@ -23,9 +24,9 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#checkPoint-1">ABOUT</a></li>
-                    <li><a href="#checkPoint-2">PROJECT</a></li>
-                    <li><a href="#checkPoint-3">CONTENT</a></li>
+                    <li><a href="#" data-index="0">ABOUT</a></li>
+                    <li><a href="#" data-index="3">PROJECT</a></li>
+                    <li><a href="#" data-index="9">CONTENT</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,7 +53,7 @@
             </section>
 
             <section class="section-group section-group--1 section-group--horizontal-left">
-                <section id="checkPoint-1" class="section section--1 Category_Name">
+                <section class="section section--1 Category_Name">
                     <div>
                         About Me
                     </div>
@@ -117,7 +118,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="checkPoint-2" class="section section--4 Category_Name">
+                <section class="section section--4 Category_Name">
                     <div>
                         Project
                     </div>
@@ -141,14 +142,18 @@
                                 </div>
                             </div>
                             <div class="button">
-                                <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
-                                <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
+                                <div class="need-to-cursor-big"><a href="https://hion-kim.github.io/web_benz_RD/"
+                                        target="_blank">Go Site</a></div>
+                                <div class="need-to-cursor-big"><a href="https://github.com/HION-KIM/web_benz_RD.git"
+                                        target="_blank">Git hub</a></div>
                             </div>
                         </div>
                         <div class="mockup">
-                            <img src="imgs/benz_mockup_2.png" alt="benz_mockup">
-                            <div class="Leftmotion-b"></div>
-                            <div class="Leftmotion-w"></div>
+                            <a href="https://hion-kim.github.io/web_benz_RD/" target="_blank">
+                                <img src="imgs/benz_mockup_2.png" alt="benz_mockup">
+                                <div class="Leftmotion-b"></div>
+                                <div class="Leftmotion-w"></div>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -170,18 +175,22 @@
                                 </div>
                             </div>
                             <div class="button">
-                                <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
-                                <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
+                                <div class="need-to-cursor-big"><a href="https://hion-kim.github.io/web_JEL_RD/"
+                                        target="_blank">Go Site</a></div>
+                                <div class="need-to-cursor-big"><a href="https://github.com/HION-KIM/web_JEL_RD.git"
+                                        target="_blank">Git hub</a></div>
                             </div>
                         </div>
                         <div class="mockup">
-                            <img src="imgs/재능_mockup.png" alt="재능_mockup">
-                            <div class="Leftmotion-b"></div>
-                            <div class="Leftmotion-w"></div>
+                            <a href="https://hion-kim.github.io/web_JEL_RD/" target="_blank">
+                                <img src="imgs/재능_mockup.png" alt="재능_mockup">
+                                <div class="Leftmotion-b"></div>
+                                <div class="Leftmotion-w"></div>
+                            </a>
                         </div>
                     </div>
                 </section>
-                <section class="section section--7 section-project">
+                <!-- <section class="section section--7 section-project">
                     <div>
                         <div class="text-box fadeInLeft">
                             <div class="h1"><span>03</span></div>
@@ -209,11 +218,11 @@
                             <div class="Leftmotion-w"></div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <section class="section section--8 section-project">
                     <div>
                         <div class="text-box fadeInLeft">
-                            <div class="h1"><span>04</span></div>
+                            <div class="h1"><span>03</span></div>
                             <div class="h2"><span>HPIX</span></div>
                             <div class="contents">
                                 <div>
@@ -228,21 +237,25 @@
                                 </div>
                             </div>
                             <div class="button">
-                                <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
-                                <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
+                                <div class="need-to-cursor-big"><a href="https://hion-kim.github.io/web_HPIX_RD/"
+                                        target="_blank">Go Site</a></div>
+                                <div class="need-to-cursor-big"><a href="https://github.com/HION-KIM/web_HPIX_RD.git"
+                                        target="_blank">Git hub</a></div>
                             </div>
                         </div>
                         <div class="mockup">
-                            <img src="imgs/HPIX_mockup.png" alt="HPIX_mockup">
-                            <div class="Leftmotion-b"></div>
-                            <div class="Leftmotion-w"></div>
+                            <a href="https://hion-kim.github.io/web_HPIX_RD/" target="_blank">
+                                <img src="imgs/HPIX_mockup.png" alt="HPIX_mockup">
+                                <div class="Leftmotion-b"></div>
+                                <div class="Leftmotion-w"></div>
+                            </a>
                         </div>
                     </div>
                 </section>
                 <section class="section section--9 section-project">
                     <div>
                         <div class="text-box fadeInLeft">
-                            <div class="h1"><span>05</span></div>
+                            <div class="h1"><span>04</span></div>
                             <div class="h2"><span>TeamProject<br>APP UX/UI Design</span></div>
                             <div class="contents">
                                 <div>
@@ -250,25 +263,30 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <span># 리디자인</span>
-                                    <span># 반응형</span>
-                                    <span># PC</span>
-                                    <span># 기여도 100%</span>
+                                    <span># 서비스기획</span>
+                                    <span># 팀프로젝트</span>
+                                    <span># APP</span>
+                                    <span># 기여도 40%</span>
                                 </div>
                             </div>
                             <div class="button">
-                                <div class="need-to-cursor-big"><a href="#">Go Site</a></div>
-                                <div class="need-to-cursor-big"><a href="#">Git hub</a></div>
+                                <div class="need-to-cursor-big"><a href="https://hion-kim.github.io/processpdf/"
+                                        target="_blank">Process</a>
+                                </div>
+                                <div class="need-to-cursor-big"><a href="https://hion-kim.github.io/processPrototye/"
+                                        target="_blank">Prototype</a></div>
                             </div>
                         </div>
                         <div class="mockup">
-                            <img src="imgs/mockup_teamproject.jpg" alt="mockup_teamproject">
-                            <div class="Leftmotion-b"></div>
-                            <div class="Leftmotion-w"></div>
+                            <a href="https://hion-kim.github.io/processpdf/" target="_blank">
+                                <img src="imgs/mockup_teamproject.jpg" alt="mockup_teamproject">
+                                <div class="Leftmotion-b"></div>
+                                <div class="Leftmotion-w"></div>
+                            </a>
                         </div>
                     </div>
                 </section>
-                <section id="checkPoint-3" class="section section--10 Category_Name">
+                <section class="section section--10 Category_Name">
                     <div>
                         CONTECT
                     </div>

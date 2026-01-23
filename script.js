@@ -1,4 +1,6 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+
 
 function HorizontalTween() {
 
@@ -70,7 +72,7 @@ function HorizontalTween() {
         });
     });
 
-    
+
     // 커넥트 너비 변경 반응형 카드 위치
     var $windowWidthHalf = ($(window).width() + 17) / 2;
     console.log($windowWidthHalf);
@@ -86,7 +88,7 @@ function HorizontalTween() {
         gsap.set('.moveup', { X: $windowWidthHalf });
     });
 
-// 커넥트 카드 애니메이션
+    // 커넥트 카드 애니메이션
     gsap.from('.moveup', {
         y: '800',
         ease: "none",
@@ -95,11 +97,31 @@ function HorizontalTween() {
             containerAnimation: $ScrollTween,
             start: "left 90%",
             end: "center 50%",
-            markers: true,
+            // markers: true,
             scrub: true,
             // once: true,
         }
-    })
+    });
+
+    // 네비게이션 옵션
+    $('header>nav>ul>li>a').on('click', function (e) {
+        
+        e.preventDefault();
+
+        const index = $(this).data('index');
+        const st = $ScrollTween.scrollTrigger;
+
+        console.log($sections.length);
+
+        const scrollPos =
+            st.start +
+            (st.end - st.start) * (index / ($sections.length - 1));
+
+        gsap.to(window, {
+            scrollTo: scrollPos,
+            duration: 1,
+        });
+    });
 }
 
 function ScrollBar__init() {
@@ -174,8 +196,7 @@ function Cursor() {
     });
 }
 
-
-HorizontalTween()
-bannerVideo_init()
-ScrollBar__init()
-Cursor()
+HorizontalTween();
+bannerVideo_init();
+ScrollBar__init();
+Cursor();
