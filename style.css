@@ -139,10 +139,18 @@ header ul {
     font-weight: 600;
 }
 
+header ul li {
+    position: relative;
+}
+
 header ul li::after {
     content: "";
     display: block;
-    margin: 4px auto 0 auto;
+    position: absolute;
+    left:50%;
+    top:120%;
+
+    transform: translateX(-50%);
     height: 2px;
     width: 0;
     background-color: #fff;
@@ -151,6 +159,13 @@ header ul li::after {
 
 header ul li:hover::after {
     width: 100%;
+}
+
+
+
+header ul li a {
+    display: block;
+    height: 100%;
 }
 
 
@@ -401,13 +416,19 @@ header ul li:hover::after {
 .section-project .text-box .button>div {
     font-family: 'pretendard';
     /* padding: 10px 16px; */
-    padding: 1.05vh 1.68vh;
+
     display: inline-block;
     border: 1px solid #fff;
     border-radius: 6px;
     /* font-size: 20px; */
     font-size: 2.11vh;
     margin-right: 18px;
+}
+
+.section-project .text-box .button>div>a {
+    display: block;
+    padding: 1.05vh 1.68vh;
+
 }
 
 .section-project .mockup {
@@ -421,8 +442,8 @@ header ul li:hover::after {
 
 .section-project .mockup>a {
     display: block;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 
 }
 
